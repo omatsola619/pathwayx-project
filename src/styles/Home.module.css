@@ -1,0 +1,51 @@
+/* .grid {
+  width: var(--max-width);
+  background: rgba(var(--card-rgb), 0);
+} */
+.wrapper{
+  padding: 0 60px;
+  background-color: #17181c;
+}
+.header{
+  height: 700px;
+  background-color: #17181c;  
+}
+@media (min-width: 400px) {
+.header::before {
+  background: radial-gradient(
+    20% 50% at 50% 50%,
+    rgba(71, 127, 247, 0.376) 0%,
+    rgba(37, 38, 44, 0) 100%
+  );
+  z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0px;
+  transform: scale(1);
+  pointer-events: none;
+}
+}
+.heroSection{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+.heroTitle{
+  font-size: 4.5rem;
+  color: white;
+  font-family: system-ui;
+  font-weight: 700;
+  width: 70%;
+  text-align: center;
+}
+.heroDesc{
+  padding-top: 50px;
+  color: white;
+  font-family: system-ui;
+  width: 50%;
+  text-align: center;
+  color: rgb(156 163 175/1);
+  font-size: 1.125rem;
+}
