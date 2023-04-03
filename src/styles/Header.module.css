@@ -53,3 +53,20 @@
     background-color: #e5e7eb5b;
     width: 100%;
 }
+.hamburger{
+    color: white;
+    display: none;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+    .headerItems{
+        padding: 20px 20px;
+    }
+}

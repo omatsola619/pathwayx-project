@@ -49,3 +49,26 @@
   color: rgb(156 163 175/1);
   font-size: 1.125rem;
 }
+@media screen and (max-width: 768px) {
+  .wrapper{
+    padding: 0;
+  }
+  .heroTitle{
+    font-size: 4.0rem;
+    width: 90%
+  }
+  .heroDesc{
+    font-size: 1.0rem;
+    width: 90%;
+    padding-top: 30px;
+  }
+  .heroSection{
+    padding-top: 80px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .heroTitle{
+    font-size: 3.0rem;
+    width: 80%;
+  }
+}

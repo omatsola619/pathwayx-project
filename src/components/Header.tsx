@@ -1,6 +1,10 @@
 import styles from 'styles/Header.module.css'
+import {RxHamburgerMenu} from "react-icons/rx"
+import MobileMenu from './MobileMenu';
+import { useState } from 'react';
 
 function Header() {
+    const [showMobileMenu, setShowMobileMenu] = useState(false)
     return (
         <div className={styles.container}>
             <div className={styles.headerItems}>
@@ -15,7 +19,12 @@ function Header() {
                     <a href="#">Help</a>
                     <div className={styles.joinBtn}>Join Us</div>
                 </nav>
+                <RxHamburgerMenu className={styles.hamburger} onClick={() => setShowMobileMenu(true)} />
             </div>
+            {
+                showMobileMenu && <MobileMenu setMenu={setShowMobileMenu}/>
+            }
+            
             <div className={styles.line}></div>
         </div>
     )

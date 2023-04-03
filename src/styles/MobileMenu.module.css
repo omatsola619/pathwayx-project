@@ -1,0 +1,36 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #17181c;
+    display: block;
+}
+.cancelBtn{
+    margin-left: auto;
+    color: white;
+    font-size: 24px;
+    padding: 25px 17px;
+    display: block;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+}
+.linkItems{
+    display: flex;
+    flex-direction: column;
+}
+.linkItems a{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: system-ui;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
