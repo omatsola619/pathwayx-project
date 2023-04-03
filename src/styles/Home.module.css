@@ -49,6 +49,39 @@
   color: rgb(156 163 175/1);
   font-size: 1.125rem;
 }
+.chevron{
+  margin-top: 60px;
+  color: rgb(156 163 175/1);
+  font-size: 25px;
+  border: 2px solid rgb(156 163 175/1);
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+.actionBtn{
+  margin-top: 60px;
+  width: 231px;
+  height: 50px;
+  background-color: #2663eb;
+  color: white;
+  font-size: 18px;
+  font-family: system-ui;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2{
+  width: 100%;
+  height: 400px;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
   .wrapper{
     padding: 0;
