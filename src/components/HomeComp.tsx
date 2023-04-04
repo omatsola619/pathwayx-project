@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styles from 'styles/Home.module.css';
 import CardItem from './CardItem';
 import Header from './Header';
-
+import {DATA} from '../data/DummyData'
 
 function HomeComp() {
     return (
@@ -23,9 +23,11 @@ function HomeComp() {
             <div className={styles.roadmaps}>
                 <div className={styles.roadmapTitle}>Select Career To Check Roadmap</div>
                 <div className={styles.cardsSection}>
-                    <CardItem />
-                    <CardItem />
-                    <CardItem />
+                    {
+                        DATA.map((item) => {
+                            return <CardItem data={item} />;
+                        })
+                    }
                 </div>
             </div>
         </div>
