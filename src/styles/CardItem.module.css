@@ -1,5 +1,5 @@
 .roadmapCards{
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .card{
@@ -12,6 +12,10 @@
   border-radius: 20px;
   position: relative;
   margin-bottom: 20px;
+  cursor: pointer;
+}
+.card:hover{
+  border: 2px solid #a9acaf;
 }
 .cardBorder{
   width: 300px;
@@ -25,6 +29,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.cardBorder:hover{
+  border: 2px solid #a9acaf;
 }
 @media screen and (max-width: 768px) {
     .card{
@@ -52,7 +59,20 @@
   padding-right: 5px;
 }
 .cardTitle{
+  width: 100%;
+}
+.cardText{
   color: #657287;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 25px;
+  white-space: pre-wrap;
+}
+@media screen and (max-width: 768px) {
+  .cardTitle{
+    width: 70%;
+    
+  }
+  .cardText{
+    font-size: 20px;
+  }
 }

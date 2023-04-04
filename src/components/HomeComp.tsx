@@ -25,7 +25,7 @@ function HomeComp() {
                 <div className={styles.cardsSection}>
                     {
                         DATA.map((item) => {
-                            return <CardItem data={item} />;
+                            return <CardItem data={item} />
                         })
                     }
                 </div>
