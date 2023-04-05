@@ -3,6 +3,7 @@ import styles from 'styles/Home.module.css';
 import CardItem from './CardItem';
 import Header from './Header';
 import {DATA} from '../data/DummyData'
+import Footer from './Footer';
 
 function HomeComp() {
     return (
@@ -30,6 +31,7 @@ function HomeComp() {
                     }
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

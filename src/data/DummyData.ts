@@ -1,9 +1,9 @@
 import { IconType } from "react-icons";
 import { RiPenNibFill } from "react-icons/ri";
 import { BsCodeSlash } from "react-icons/bs";
-import { BiLineChart } from "react-icons/bi";
+import { BiLineChart, BiShieldQuarter } from "react-icons/bi";
 import { TbCloudComputing } from "react-icons/tb";
-import {  } from "react-icons/bs";
+import { GiVintageRobot } from "react-icons/gi";
 import {  } from "react-icons/bs";
 import {  } from "react-icons/bs";
 import {  } from "react-icons/bs";
@@ -21,7 +21,7 @@ export const DATA: DataType[] = [
         url: '',
     },
     {
-        name: 'software development',
+        name: 'software dev',
         icon: BsCodeSlash,
         url: '',
     },
@@ -33,6 +33,16 @@ export const DATA: DataType[] = [
     {
         name: 'cloud computing',
         icon: TbCloudComputing,
+        url: '',
+    },
+    {
+        name: 'robotics',
+        icon: GiVintageRobot,
+        url: '',
+    },
+    {
+        name: 'cyber security',
+        icon: BiShieldQuarter,
         url: '',
     },
 ]

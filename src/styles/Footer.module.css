@@ -1,0 +1,36 @@
+.container{}
+.line{
+    height: 0.2px;
+    background-color: #e5e7eb5b;
+    width: 100%;
+}
+.footerInfo{
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info{
+    font-size: 17px;
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+}
+.socials{
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media screen and (max-width: 768px) {
+    .footerInfo{
+        padding: 30px 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .footerInfo{
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
