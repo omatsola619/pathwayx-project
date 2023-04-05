@@ -4,6 +4,7 @@ import CardItem from './CardItem';
 import Header from './Header';
 import {DATA} from '../data/DummyData'
 import Footer from './Footer';
+import Accordion from './Accordion';
 
 function HomeComp() {
     return (
@@ -29,6 +30,12 @@ function HomeComp() {
                             return <CardItem data={item} key={item.name} />
                         })
                     }
+                </div>
+            </div>
+            <div className={styles.accordionSection}>
+                <div className={styles.roadmapTitle}>What we offer</div>
+                <div className={styles.accordions}>
+                    <Accordion title="section 1" content="the content of the accordion" />
                 </div>
             </div>
             <Footer />
