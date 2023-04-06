@@ -1,34 +1,37 @@
 .accordionContainer {
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #374051;
     width: 700px;
   }
-  
+  .accordionContainer:last-child{
+    border-bottom: none;
+  }
   .accordionHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-    padding: 0 5px;
+    padding: 5px 14px;
+    color: white;
   }
   .accordionHeader h3{
     font-family: 'IBM Plex Mono', monospace;
   }
   .accordionIcon {
-    font-size: 20px;
+    font-size: 15px;
     transition: transform 0.2s;
   }
   
   .rotate {
-    transform: rotate(45deg);
+    transform: rotate(180deg);
   }
   
   .accordionContent {
-    padding: 10px 0;
+    padding: 10px;
   }
+  .accordionContent p{
+    color: white;
+  }
+  .accordionItems{}
   @media screen and (max-width: 768px) {
     .accordionContainer{
         width: 80%;

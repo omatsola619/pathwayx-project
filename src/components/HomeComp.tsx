@@ -35,7 +35,11 @@ function HomeComp() {
             <div className={styles.accordionSection}>
                 <div className={styles.roadmapTitle}>What we offer</div>
                 <div className={styles.accordions}>
-                    <Accordion title="section 1" content="the content of the accordion" />
+                    <div className={styles.accordionItems}>
+                        <Accordion title="section 1" content="the content of the accordion" />
+                        <Accordion title="section 1" content="the content of the accordion" />
+                        <Accordion title="section 1" content="the content of the accordion" />
+                    </div>
                 </div>
             </div>
             <Footer />

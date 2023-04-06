@@ -1,5 +1,6 @@
 import styles from 'styles/Accordion.module.css'
 import React, { useState } from 'react';
+import { BsChevronDown } from "react-icons/bs";
 
 const Accordion = ({ title, content }: {title: string, content: string}) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -12,7 +13,7 @@ const Accordion = ({ title, content }: {title: string, content: string}) => {
     <div className={styles.accordionContainer}>
       <div className={styles.accordionHeader} onClick={toggleAccordion}>
         <h3>{title}</h3>
-        <span className={`${styles.accordionIcon} ${isExpanded ? styles.rotate : ''}`}>+</span>
+        <span className={`${styles.accordionIcon} ${isExpanded ? styles.rotate : ''}`}><BsChevronDown /></span>
       </div>
       {isExpanded && (
         <div className={styles.accordionContent}>
