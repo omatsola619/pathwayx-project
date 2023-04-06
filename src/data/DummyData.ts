@@ -18,7 +18,7 @@ export const DATA: DataType[] = [
     {
         name: 'design',
         icon: RiPenNibFill,
-        url: '',
+        url: 'design',
     },
     {
         name: 'software dev',

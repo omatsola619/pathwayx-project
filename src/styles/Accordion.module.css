@@ -1,6 +1,5 @@
 .accordionContainer {
     border-bottom: 1px solid #374051;
-    width: 700px;
   }
   .accordionContainer:last-child{
     border-bottom: none;
@@ -35,15 +34,14 @@
     font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
   }
-  .accordionItems{}
   @media screen and (max-width: 768px) {
-    .accordionContainer{
-        width: 80%;
-        padding: 5px;
+    .accordionContent p{
+        font-size: 15px;
+    }
+    .accordionHeader h3{
+        font-size: 20px;
     }
   }
   @media screen and (max-width: 425px) {
-    .accordionContainer{
-        width: 90%;
-    }
+
   }

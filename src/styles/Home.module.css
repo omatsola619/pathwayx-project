@@ -102,7 +102,9 @@
   align-items: center;
   justify-content: center;
 }
-
+.accordionItems{
+  width: 700px;
+}
 
 
 @media screen and (max-width: 768px) {
@@ -126,6 +128,9 @@
   }
   .cardsSection{
     grid-template-columns: repeat(auto-fit , minmax(250px, 1fr));
+  }
+  .accordionItems{
+    width: 90%;
   }
 }
 @media screen and (max-width: 425px) {

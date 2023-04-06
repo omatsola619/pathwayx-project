@@ -6,8 +6,11 @@ import {DATA} from '../data/DummyData'
 import Footer from './Footer';
 import Accordion from './Accordion';
 import {ACCORDIONDATA} from '../data/AccordionData';
+import { useRouter } from 'next/router'
 
 function HomeComp() {
+    const router = useRouter()
+
     return (
         <div className={styles.container}>
             <header className={styles.header}>
@@ -28,7 +31,12 @@ function HomeComp() {
                 <div className={styles.cardsSection}>
                     {
                         DATA.map((item) => {
-                            return <CardItem data={item} key={item.name} />
+                            // return <CardItem data={item} key={item.name} />
+                            return (
+                                <div key={item.name} onClick={() => router.push(`/${item.url}`)}>
+                                    <CardItem data={item}  />
+                                </div>
+                            )
                         })
                     }
                 </div>
@@ -38,8 +46,8 @@ function HomeComp() {
                 <div className={styles.accordions}>
                     <div className={styles.accordionItems}>
                         {
-                            ACCORDIONDATA.map((item) => {
-                                return <Accordion title={item.title} content={item.content} />;
+                            ACCORDIONDATA.map((item, i) => {
+                                return <Accordion title={item.title} content={item.content} key={i} />;
                             })
                         }
                     </div>
