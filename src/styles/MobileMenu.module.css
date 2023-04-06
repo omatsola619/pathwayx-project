@@ -29,8 +29,8 @@
 .linkItems a{
     text-align: center;
     color: white;
-    text-decoration: none;
-    font-family: system-ui;
+    text-decoration: none;    
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 20px;
     margin-bottom: 10px;
 }

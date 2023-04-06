@@ -5,6 +5,7 @@ import Header from './Header';
 import {DATA} from '../data/DummyData'
 import Footer from './Footer';
 import Accordion from './Accordion';
+import {ACCORDIONDATA} from '../data/AccordionData';
 
 function HomeComp() {
     return (
@@ -36,9 +37,11 @@ function HomeComp() {
                 <div className={styles.roadmapTitle}>What we offer</div>
                 <div className={styles.accordions}>
                     <div className={styles.accordionItems}>
-                        <Accordion title="section 1" content="the content of the accordion" />
-                        <Accordion title="section 1" content="the content of the accordion" />
-                        <Accordion title="section 1" content="the content of the accordion" />
+                        {
+                            ACCORDIONDATA.map((item) => {
+                                return <Accordion title={item.title} content={item.content} />;
+                            })
+                        }
                     </div>
                 </div>
             </div>
