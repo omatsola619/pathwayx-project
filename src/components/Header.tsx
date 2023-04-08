@@ -2,16 +2,17 @@ import styles from 'styles/Header.module.css'
 import {RxHamburgerMenu} from "react-icons/rx"
 import MobileMenu from './MobileMenu';
 import { useState } from 'react';
+import Link from 'next/link'
 
 function Header() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     return (
         <div className={styles.container}>
             <div className={styles.headerItems}>
-                <div className={styles.logo}>
+                <Link href="/" className={styles.logo}>
                     <div className={styles.icon}>Px</div>
                     <div className={styles.logoText}>pathwayx.dev</div>
-                </div>
+                </Link>
                 <nav className={styles.nav}>
                     <a href="#">Fields</a>
                     <a href="#">Jobs</a>

@@ -2,10 +2,6 @@
   padding: 0 60px;
   background-color: #17181c;
 }
-.header{
-  
-  background-color: #17181c;  
-}
 @media (min-width: 400px) {
 .header::before {
   background: radial-gradient(
@@ -26,20 +22,21 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 150px;
+  padding-top: 110px;
 }
 .heroTitle{
-  font-size: 4.5rem;
+  font-size: 5.0rem;
   color: white;
-  font-family: system-ui;
-  font-weight: 700;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
   width: 70%;
   text-align: center;
+  line-height: 90px;
 }
 .heroDesc{
-  padding-top: 50px;
+  padding-top: 40px;
   color: white;
-  font-family: system-ui;
+  font-family: 'Manrope', sans-serif;
   width: 50%;
   text-align: center;
   color: rgb(156 163 175/1);
@@ -58,17 +55,18 @@
   border-radius: 5px;
 }
 .actionBtn{
-  margin-top: 60px;
+  margin-top: 40px;
   width: 231px;
   height: 50px;
   background-color: #2663eb;
   color: white;
   font-size: 18px;
-  font-family: system-ui;
+  font-family: 'Manrope', sans-serif;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 @media screen and (max-width: 375px) {
   .actionBtn {
@@ -82,7 +80,7 @@
 }
 .roadmapTitle{
   color: #a9acaf;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Manrope', sans-serif;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
@@ -113,7 +111,8 @@
   }
   .heroTitle{
     font-size: 4.0rem;
-    width: 90%
+    width: 90%;
+    line-height: 60px;
   }
   .heroDesc{
     font-size: 1.0rem;

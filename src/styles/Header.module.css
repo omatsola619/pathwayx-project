@@ -4,22 +4,25 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 .icon{
     width: 35px;
     height: 35px;
     background-color: white;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Manrope', sans-serif;
     font-weight: 700;
     font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    text-decoration: none;
+    color: black;
 }
 .logoText{
     color: white;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Manrope', sans-serif;
     font-size: 21px;
     font-weight: 700;
 }
@@ -27,7 +30,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Manrope', sans-serif;
     font-size: 16px;
     font-weight: 400;
 }
@@ -46,7 +49,7 @@
     padding: 8px 20px;
     background-color: #2663eb;
     border-radius: 5px;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Manrope', sans-serif;
 }
 .line{
     height: 0.2px;

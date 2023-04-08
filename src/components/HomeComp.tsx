@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from 'styles/Home.module.css';
 import CardItem from './CardItem';
 import Header from './Header';
@@ -6,10 +5,9 @@ import {DATA} from '../data/DummyData'
 import Footer from './Footer';
 import Accordion from './Accordion';
 import {ACCORDIONDATA} from '../data/AccordionData';
-import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 function HomeComp() {
-    const router = useRouter()
 
     return (
         <div className={styles.container}>
@@ -23,7 +21,7 @@ function HomeComp() {
                         PathWayX is a place that provides roadmap, insights,
                         and resources to help you navigate the digital landscape with confidence
                     </div>
-                    <div className={styles.actionBtn}>Start your journey</div>
+                    <Link href="/check" className={styles.actionBtn}>Start your journey</Link>
                 </div>
             </header>
             <div className={styles.roadmaps}>
@@ -31,11 +29,10 @@ function HomeComp() {
                 <div className={styles.cardsSection}>
                     {
                         DATA.map((item) => {
-                            // return <CardItem data={item} key={item.name} />
                             return (
-                                <div key={item.name} onClick={() => router.push(`/${item.url}`)}>
+                                <Link href={`/${item.url}`} style={{textDecoration: 'none'}} key={item.name}>
                                     <CardItem data={item}  />
-                                </div>
+                                </Link>
                             )
                         })
                     }

@@ -7,7 +7,7 @@ function SkillCategory({ children }: React.PropsWithChildren) {
     return (
         <div className={styles.container}>
             <Header />
-            {children}
+            <div className={styles.children}>{children}</div>
             <Footer />
         </div>
     )

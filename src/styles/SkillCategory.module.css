@@ -1,1 +1,12 @@
-.container{}
+.container{
+    padding: 0 60px;
+    background-color: #17181c;
+}
+.children{
+    min-height: 600px;
+}
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0;
+    }
+}
