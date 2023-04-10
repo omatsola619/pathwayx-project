@@ -4,7 +4,11 @@ import MobileMenu from './MobileMenu';
 import { useState } from 'react';
 import Link from 'next/link'
 
-function Header() {
+interface HeaderProps {
+    noLine?: boolean;
+}
+
+const Header: React.FunctionComponent<HeaderProps> = ({noLine}) => {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     return (
         <div className={styles.container}>
@@ -22,11 +26,9 @@ function Header() {
                 </nav>
                 <RxHamburgerMenu className={styles.hamburger} onClick={() => setShowMobileMenu(true)} />
             </div>
-            {
-                showMobileMenu && <MobileMenu setMenu={setShowMobileMenu}/>
-            }
-            
-            <div className={styles.line}></div>
+            { showMobileMenu && <MobileMenu setMenu={setShowMobileMenu} />}
+
+            {!noLine && <div className={styles.line}></div>}
         </div>
     )
 }
