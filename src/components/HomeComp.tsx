@@ -1,13 +1,19 @@
 import styles from 'styles/Home.module.css';
 import CardItem from './CardItem';
 import Header from './Header';
-import {DATA} from '../data/DummyData'
+import {DATA, DataType} from '../data/DummyData'
 import Footer from './Footer';
 import Accordion from './Accordion';
 import {ACCORDIONDATA} from '../data/AccordionData';
 import Link from 'next/link'
+import { useEffect, useState } from 'react';
 
 function HomeComp() {
+    const [realData, setRealData] = useState<DataType[]>([])
+
+    useEffect(() => {
+        setRealData(DATA)
+    }, [])
 
     return (
         <div className={styles.container}>
@@ -28,7 +34,7 @@ function HomeComp() {
                 <div className={styles.roadmapTitle}>Select Career To Check Roadmap</div>
                 <div className={styles.cardsSection}>
                     {
-                        DATA.map((item) => {
+                        realData.map((item) => {
                             return (
                                 <Link href={`/${item.url}`} style={{textDecoration: 'none'}} key={item.name}>
                                     <CardItem data={item}  />
