@@ -4,6 +4,7 @@ import styles from 'styles/design.module.css'
 import { RiPenNibFill } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import { IconType } from "react-icons";
+import Link from 'next/link'
 
 interface DesignData {
     name: string;
@@ -15,7 +16,7 @@ const DATA: DesignData[] = [
     {
         name: 'user interface',
         icon: RiPenNibFill,
-        url: ''
+        url: 'user-interface'
     },
     {
         name: 'user exeperience',
@@ -38,9 +39,9 @@ function Design() {
                     {
                         data.map((item: any) => {
                             return (
-                                <div key={item.name}>
+                                <Link href={`/design/${item.url}`} key={item.name} className={styles.link}>
                                     <CardItem data={item}  />
-                                </div>
+                                </Link>
                             )
                         })
                     }

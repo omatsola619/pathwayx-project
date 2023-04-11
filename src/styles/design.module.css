@@ -17,6 +17,9 @@
     flex-wrap: wrap;
     padding: 0 20px;
   }
+  .link{
+    text-decoration: none;
+  }
 
   @media screen and (max-width: 648px) {
     .cardsSection{
