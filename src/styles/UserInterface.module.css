@@ -1,0 +1,47 @@
+.container{
+    background-color: #e1e1e1;
+}
+.header{
+    background-color: white;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.content{
+    padding: 80px 60px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .headerText{
+        font-size: 40px;
+    }
+    .headerDesc{
+        font-size: 12px;
+    }
+    .headerActions{
+        margin-top: 25px;
+    }
+    .btn1, .btn2{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .headerText{
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+}

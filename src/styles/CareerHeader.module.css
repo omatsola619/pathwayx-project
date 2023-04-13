@@ -1,0 +1,44 @@
+.headerInfo{
+    margin-top: 20px;
+}
+.headerText{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+}
+.headerDesc{
+    font-family: 'Manrope', sans-serif;
+    color: #76748a;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.headerActions{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn1{
+    font-family: 'Manrope', sans-serif;
+    background-color: white;
+    font-size: 16px;
+    color: black;
+    padding: 10px 15px;
+    font-weight: 600;
+    border: 2px solid black;
+    box-shadow: -5px 5px 0px;
+    cursor: pointer;
+}
+.btn2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: #e1e1e134;
+    padding: 10px 15px;
+    border-radius: 6px;
+}

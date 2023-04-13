@@ -63,8 +63,8 @@
 }
 .cardText{
   color: #657287;
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 25px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 23px;
   white-space: pre-wrap;
 }
 @media screen and (max-width: 768px) {
