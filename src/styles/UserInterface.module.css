@@ -70,10 +70,31 @@
     .btn1, .btn2{
         font-size: 13px;
     }
+    .content{
+        padding: 40px 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    .pathTitle span{
+        font-size: 18px;
+    }
+    .pathTitleIcon{
+        display: none;
+    }
+    .accordionSection{
+        padding: 0 20px 20px 30px;
+    }
 }
 @media screen and (max-width: 425px) {
     .headerText{
         line-height: 50px;
         margin-bottom: 10px;
+    }
+    .accordionSection{
+        padding: 0 10px 10px 10px;
+    }
+    .pathTitle{
+        padding: 40px 10px 20px 20px;
     }
 }
