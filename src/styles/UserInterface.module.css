@@ -8,13 +8,45 @@
     padding-left: 60px;
     padding-right: 60px;
 }
-
 .content{
     padding: 80px 60px;
 }
-
-
-
+.pathWrapper{
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+.contentHeader{
+    font-size: 21px;
+    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    margin-bottom: 20px;
+}
+.pathTitle{
+    padding: 40px 50px 20px 35px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.pathTitleIcon{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(27, 212, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    border-radius: 50%;
+}
+.pathTitle span{
+    font-family: 'Manrope', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+.accordionSection{
+    padding: 0 50px 20px 88px;
+}
 
 
 @media screen and (max-width: 768px) {
