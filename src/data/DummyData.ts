@@ -6,7 +6,7 @@ import { TbCloudComputing } from "react-icons/tb";
 import { GiVintageRobot } from "react-icons/gi";
 import {  } from "react-icons/bs";
 import {  } from "react-icons/bs";
-import {  } from "react-icons/bs";
+
 
 export interface DataType {
     name: string;

@@ -1,12 +1,13 @@
 import styles from 'styles/RoadmapAccordion.module.css'
-import React, { useState } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { BsChevronDown } from "react-icons/bs";
 
 interface MyType {
     title: string;
+    children: ReactNode;
 }
 
-const RoadmapAccordion: React.FunctionComponent<MyType> = ({title}) => {
+const RoadmapAccordion: React.FunctionComponent<MyType> = ({title, children}) => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleAccordion = () => {
@@ -21,7 +22,7 @@ const RoadmapAccordion: React.FunctionComponent<MyType> = ({title}) => {
       </div>
       {isExpanded && (
         <div className={styles.accordionContent}>
-          <p>My content goes here</p>
+          {children}
         </div>
       )}
     </div>
