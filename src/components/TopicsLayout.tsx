@@ -4,7 +4,7 @@ import { TopicTypes } from "src/types";
 import styles from 'styles/TopicsLayout.module.css'
 
 
-function TopicsLayout({data}: {data: TopicTypes}) {
+function TopicsLayout({data}: {data: TopicTypes[]}) {
     return (
       <div className={styles.topicWrapper}>
         {data.map((topic, i) => {
